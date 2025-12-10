@@ -92,7 +92,7 @@
 <div class="container">
     <h1>รับสิทธิ์พิเศษทันที!</h1>
     <p>เพียงแชร์ให้เพื่อนหรือกลุ่มใน LINE เพื่อยืนยันสิทธิ์</p>
-    <p>แชร์สำเร็จ → เข้ารับสิทธิ์ได้ทันที</p>
+    <p>แชร์สำเร็จ → แคปภาพส่งให้แอดมินเพื่อรับโค๊ดฟรี</p>
 
     <button class="share-btn" onclick="share()">กดแชร์ให้เพื่อน/กลุ่ม</button>
 </div>
@@ -108,14 +108,16 @@
             altText: "สมัครเพื่อรับสิทธิ์พิเศษทันที!",
             contents: {
                 type: "bubble",
+                size: "mega",
 
                 /* HERO IMAGE เต็ม 100% */
                 hero: {
                     type: "image",
                     url: "https://img2.pic.in.th/pic/image---2025-12-10T183734.463.png",
                     size: "full",
-                    aspectRatio: "16:9",
-                    aspectMode: "cover"
+                    aspectRatio: "1:1",     // ← 1:1
+                    aspectMode: "cover",
+                    backgroundColor: "#000000",
                 },
 
                 /* เนื้อหาใน Flex */
@@ -123,6 +125,8 @@
                     type: "box",
                     layout: "vertical",
                     spacing: "md",
+                    paddingAll: "16px",
+                    backgroundColor: "#0b0f1a",
                     contents: [
                         {
                             type: "text",
@@ -145,6 +149,8 @@
                 footer: {
                     type: "box",
                     layout: "vertical",
+                    backgroundColor: "#0a1220",
+                    paddingAll: "14px",
                     spacing: "md",
                     contents: [
                         {
